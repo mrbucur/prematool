@@ -54,7 +54,16 @@ const Login = () => {
   };
 
   return (
-    <>
+    <div
+      style={{
+        backgroundImage: 'url(/login.jpg)',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        width: '100vw',
+        height: '100vh',
+      }}
+    >
       <img
         src={logo}
         width={250}
@@ -120,7 +129,7 @@ const Login = () => {
         isRegisterDialogOpen={isRegisterDialogOpen}
         setIsRegisterDialogOpen={setIsRegisterDialogOpen}
       />
-    </>
+    </div>
   );
 };
 
