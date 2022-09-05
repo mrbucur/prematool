@@ -1,0 +1,8 @@
+{
+  "/api/*": "/$1",
+  "/users*": "/660/users$1",
+  "/user-children-map*": "/660/user-children-map$1",
+  "/children-profiles*": "/660/children-profiles$1",
+  "/children-measurement-map*": "/660/children-measurement-map$1",
+  "/measurements*": "/660/measurements$1"
+}

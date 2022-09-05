@@ -1,0 +1,167 @@
+{
+  "users": [
+    {
+      "email": "p1@test.com",
+      "password": "$2a$10$9xOi7UUcTFZIEBKywg0n..oxB6tiYRyPeBRM3.aga84eCt5YVBntC",
+      "lastName": "test1",
+      "firstName": "test1",
+      "rol": "parinte",
+      "id": "4dd72962-fddc-48ff-ba84-75fac1922a25"
+    },
+    {
+      "email": "puiu@bucur.info",
+      "password": "$2a$10$uK.xAGowb2EnuUl8f01dsOfqDhmpHX.ge3TNTqDwWuHVvw0gpEp3e",
+      "lastName": "Bucur",
+      "firstName": "Puiu",
+      "rol": "parinte",
+      "id": "1cc87c91-6660-4a7e-bba8-ebb16e6f0780"
+    },
+    {
+      "email": "ana@bucur.info",
+      "password": "$2a$10$wMuN3CpePyAYi/DW0PegMe1nGEvvrTrvuAOMI5EKn2eOrDvTFUH5.",
+      "lastName": "Valcauan",
+      "firstName": "Ana Maria",
+      "rol": "parinte",
+      "id": "1dcfdd3f-6c0e-4566-af69-455fa2ed9035"
+    },
+    {
+      "email": "m@m.com",
+      "password": "$2a$10$3sYld52yLT2.egEH18q13e6ZUSA11pXWEa6RaHaadGtsHL3iHSh..",
+      "lastName": "Medic",
+      "firstName": "dr. ",
+      "rol": "medic",
+      "id": "ce06168f-fc2b-4f6e-91df-91fe5d7b2a4b"
+    },
+    {
+      "email": "z@z.com",
+      "password": "$2a$10$F5Yu0bkVNJ4rxU2NDSXLAu2gK97/RUN8n.3uq9CKVrJ7o4Vs7Picu",
+      "lastName": "ZETTA",
+      "firstName": "Zet",
+      "rol": "parinte",
+      "id": "07c43ea6-f4af-4f1f-9651-ec5ca6adac64"
+    }
+  ],
+  "user-children-map": [
+    {
+      "childrenProfileIds": [
+        "bd77a668-d7da-4caa-b433-27f5b8f6d1f7"
+      ],
+      "id": "4dd72962-fddc-48ff-ba84-75fac1922a25"
+    },
+    {
+      "childrenProfileIds": [
+        "a9ce0437-bbdf-4544-8458-37f2e9a3eaa2",
+        "679f2723-a694-4c70-abe9-718fd706e430",
+        "6ac82d0f-4df3-45e2-89f8-05bd6ef3ce9f"
+      ],
+      "id": "1cc87c91-6660-4a7e-bba8-ebb16e6f0780"
+    },
+    {
+      "childrenProfileIds": [
+        "0f8f06c7-ea95-4d5a-9f76-3c4bdd91e937",
+        "f0289ae8-13da-4f0c-8b72-ac30d959b822"
+      ],
+      "id": "1dcfdd3f-6c0e-4566-af69-455fa2ed9035"
+    },
+    {
+      "childrenProfileIds": [
+        "0f8f06c7-ea95-4d5a-9f76-3c4bdd91e937",
+        "f0289ae8-13da-4f0c-8b72-ac30d959b822",
+        "6ac82d0f-4df3-45e2-89f8-05bd6ef3ce9f"
+      ],
+      "id": "ce06168f-fc2b-4f6e-91df-91fe5d7b2a4b"
+    }
+  ],
+  "children-profiles": [
+    {
+      "firstName": "copil1",
+      "lastName": "copl1",
+      "dateOfBirth": "0001-01-01",
+      "weightAtBirth": "1",
+      "apgarScore": "1",
+      "id": "bd77a668-d7da-4caa-b433-27f5b8f6d1f7"
+    },
+    {
+      "firstName": "Ana Sofia",
+      "lastName": "Bucur",
+      "dateOfBirth": "2020-05-19",
+      "weightAtBirth": "1900",
+      "apgarScore": "10",
+      "id": "a9ce0437-bbdf-4544-8458-37f2e9a3eaa2"
+    },
+    {
+      "firstName": "Maria Irina ",
+      "lastName": "Bucur",
+      "dateOfBirth": "2020-10-17",
+      "weightAtBirth": "1900",
+      "apgarScore": "10",
+      "id": "679f2723-a694-4c70-abe9-718fd706e430"
+    },
+    {
+      "firstName": "Ana Sofia",
+      "lastName": "Bucur",
+      "dateOfBirth": "2020-05-19",
+      "weightAtBirth": "1900",
+      "apgarScore": "10",
+      "id": "0f8f06c7-ea95-4d5a-9f76-3c4bdd91e937"
+    },
+    {
+      "firstName": "Maria Irina ",
+      "lastName": "Bucur",
+      "dateOfBirth": "2020-05-19",
+      "weightAtBirth": "1900",
+      "apgarScore": "10",
+      "id": "f0289ae8-13da-4f0c-8b72-ac30d959b822"
+    },
+    {
+      "firstName": "Paul",
+      "lastName": "Negoescu",
+      "dateOfBirth": "1984-10-17",
+      "weightAtBirth": "3200",
+      "apgarScore": "10",
+      "id": "6ac82d0f-4df3-45e2-89f8-05bd6ef3ce9f"
+    }
+  ],
+  "children-measurement-map": [
+    {
+      "measurementIds": [
+        "4b41bbfa-7c28-4bab-8d3f-1dd41a56dc41",
+        "750adc11-c5db-45dd-9db5-41c382c19e48"
+      ],
+      "id": "0f8f06c7-ea95-4d5a-9f76-3c4bdd91e937"
+    },
+    {
+      "measurementIds": [
+        "8c55a1b2-04f9-484b-bebc-029d4a18180b",
+        "cc7bbb83-6766-4333-978e-876111e65594"
+      ],
+      "id": "a9ce0437-bbdf-4544-8458-37f2e9a3eaa2"
+    }
+  ],
+  "measurements": [
+    {
+      "measurementDate": "2022-07-27",
+      "measurementValue": "15 kg",
+      "measurementType": "Greutate",
+      "id": "4b41bbfa-7c28-4bab-8d3f-1dd41a56dc41"
+    },
+    {
+      "measurementDate": "2022-08-30",
+      "measurementValue": "rotavirus",
+      "measurementType": "Vaccin",
+      "id": "750adc11-c5db-45dd-9db5-41c382c19e48"
+    },
+    {
+      "measurementDate": "2022-08-25",
+      "measurementValue": "15 kg",
+      "measurementType": "Greutate",
+      "id": "8c55a1b2-04f9-484b-bebc-029d4a18180b"
+    },
+    {
+      "measurementDate": "2022-07-20",
+      "measurementValue": "Optional - varicela",
+      "measurementType": "Vaccin",
+      "id": "cc7bbb83-6766-4333-978e-876111e65594"
+    }
+  ]
+}
