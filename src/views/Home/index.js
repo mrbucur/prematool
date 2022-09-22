@@ -4,16 +4,18 @@ import { Link } from 'react-router-dom';
 import { Dialog, Transition } from '@headlessui/react';
 import clsx from 'clsx';
 import { AuthContext } from '../../contexts/Auth';
-import { getChildrenProfiles, addChildrenProfile, deleteChildrenProfile } from '../../services';
+import {
+  getChildrenProfiles,
+  addChildrenProfile,
+  deleteChildrenProfile,
+} from '../../services';
 import ConfirmationDialog from '../../components/ConfirmationDialog';
 
 const Home = () => {
   const {
     userProfile: { rol, id: userId },
   } = useContext(ApplicationContext);
-  const {
-    accessToken,
-  } = useContext(AuthContext);
+  const { accessToken } = useContext(AuthContext);
   const [isInitialized, setIsInitialized] = useState(false);
   const [childrenProfiles, setChildrenProfiles] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +34,8 @@ const Home = () => {
     apgarScore: '',
   });
   const [showConfirmationDialog, setShowConfirmationDialog] = useState(false);
-  const [selectedProfileIdForDeletion, setSelectedrPofileIdForDeletion] = useState(null);
+  const [selectedProfileIdForDeletion, setSelectedrPofileIdForDeletion] =
+    useState(null);
 
   useEffect(() => {
     const initHome = async () => {
@@ -49,7 +52,7 @@ const Home = () => {
     if (!isInitialized) {
       initHome();
     }
-  }, [accessToken, isInitialized, userId])
+  }, [accessToken, isInitialized, userId]);
 
   const handleInputChange = (e) => {
     setErrors({ ...errors, [e.target.name]: '' });
@@ -92,14 +95,14 @@ const Home = () => {
       userId,
       childrenProfile: {
         ...values,
-      }
+      },
     });
 
     setChildrenProfiles([
       ...childrenProfiles,
       {
-        ...profileResult
-      }
+        ...profileResult,
+      },
     ]);
 
     closeModal();
@@ -110,7 +113,10 @@ const Home = () => {
   };
 
   const handleDeleteChildrenProfile = async () => {
-    await deleteChildrenProfile({ accessToken, childrenProfileId: selectedProfileIdForDeletion });
+    await deleteChildrenProfile({
+      accessToken,
+      childrenProfileId: selectedProfileIdForDeletion,
+    });
     const getChildrenProfilesResult = await getChildrenProfiles({
       accessToken,
       userId,
@@ -190,16 +196,15 @@ const Home = () => {
 
                   return (
                     <div key={id}>
-                      <li className='p-3'>
+                      <li className="p-3">
                         <div className="flex">
                           <div className="flex-1">
                             <Link to={url}>
                               {lastName} {firstName}
                             </Link>
                           </div>
-                          {
-                            rol === 'parinte' &&
-                            <div className='flex justify-end'>
+                          {rol === 'parinte' && (
+                            <div className="flex justify-end">
                               <button
                                 type="button"
                                 onClick={() => {
@@ -210,11 +215,9 @@ const Home = () => {
                               >
                                 Sterge
                               </button>
-
                             </div>
-                          }
+                          )}
                         </div>
-
                       </li>
                       <hr />
                     </div>
@@ -270,9 +273,12 @@ const Home = () => {
                       </div>
                       <div className="flex grow">
                         <input
-                          className={clsx('w-[100%] border rounded border-black ml-1', {
-                            'border-red-800': errors.firstName,
-                          })}
+                          className={clsx(
+                            'w-[100%] border rounded border-black ml-1',
+                            {
+                              'border-red-800': errors.firstName,
+                            }
+                          )}
                           type="text"
                           name="firstName"
                           id="firstName"
@@ -291,9 +297,12 @@ const Home = () => {
                       </div>
                       <div className="flex grow">
                         <input
-                          className={clsx('w-[100%] border rounded border-black ml-1', {
-                            'border-red-800': errors.lastName,
-                          })}
+                          className={clsx(
+                            'w-[100%] border rounded border-black ml-1',
+                            {
+                              'border-red-800': errors.lastName,
+                            }
+                          )}
                           type="text"
                           name="lastName"
                           id="lastName"
@@ -312,9 +321,12 @@ const Home = () => {
                       </div>
                       <div className="flex grow">
                         <input
-                          className={clsx('w-[100%] border rounded border-black ml-1', {
-                            'border-red-800': errors.dateOfBirth,
-                          })}
+                          className={clsx(
+                            'w-[100%] border rounded border-black ml-1',
+                            {
+                              'border-red-800': errors.dateOfBirth,
+                            }
+                          )}
                           type="date"
                           name="dateOfBirth"
                           id="dateOfBirth"
@@ -335,9 +347,12 @@ const Home = () => {
                       </div>
                       <div className="flex grow">
                         <input
-                          className={clsx('w-[100%] border rounded border-black ml-1', {
-                            'border-red-800': errors.weightAtBirth,
-                          })}
+                          className={clsx(
+                            'w-[100%] border rounded border-black ml-1',
+                            {
+                              'border-red-800': errors.weightAtBirth,
+                            }
+                          )}
                           type="text"
                           pattern="[0-9]*"
                           name="weightAtBirth"
@@ -359,9 +374,12 @@ const Home = () => {
                       </div>
                       <div className="flex grow">
                         <input
-                          className={clsx('w-[100%] border rounded border-black ml-1', {
-                            'border-red-800': errors.apgarScore,
-                          })}
+                          className={clsx(
+                            'w-[100%] border rounded border-black ml-1',
+                            {
+                              'border-red-800': errors.apgarScore,
+                            }
+                          )}
                           type="text"
                           name="apgarScore"
                           id="apgarScore"

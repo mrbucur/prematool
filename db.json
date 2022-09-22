@@ -39,6 +39,14 @@
       "firstName": "Zet",
       "rol": "parinte",
       "id": "07c43ea6-f4af-4f1f-9651-ec5ca6adac64"
+    },
+    {
+      "email": "p@p.com",
+      "password": "$2a$10$7Kb.aeUM0RB4BS2epeoY1uEEWfU3HgC8PS10ueK6Za.vPHtnAtxsO",
+      "lastName": "Bucur",
+      "firstName": "Puiu",
+      "rol": "parinte",
+      "id": "ab8056e7-926c-4b4b-ad4b-be635795d0e2"
     }
   ],
   "user-children-map": [
@@ -70,6 +78,13 @@
         "6ac82d0f-4df3-45e2-89f8-05bd6ef3ce9f"
       ],
       "id": "ce06168f-fc2b-4f6e-91df-91fe5d7b2a4b"
+    },
+    {
+      "childrenProfileIds": [
+        "b80532f8-b93e-4a66-841c-c5cb8d976440",
+        "976b1bf7-459f-4802-a1ef-3bab17c4907e"
+      ],
+      "id": "ab8056e7-926c-4b4b-ad4b-be635795d0e2"
     }
   ],
   "children-profiles": [
@@ -120,6 +135,22 @@
       "weightAtBirth": "3200",
       "apgarScore": "10",
       "id": "6ac82d0f-4df3-45e2-89f8-05bd6ef3ce9f"
+    },
+    {
+      "firstName": "Ana Sofia",
+      "lastName": "Bucur",
+      "dateOfBirth": "2020-05-19",
+      "weightAtBirth": "1900",
+      "apgarScore": "9/10",
+      "id": "b80532f8-b93e-4a66-841c-c5cb8d976440"
+    },
+    {
+      "firstName": "Maria Irina",
+      "lastName": "Bucur",
+      "dateOfBirth": "2020-05-19",
+      "weightAtBirth": "1900",
+      "apgarScore": "9/10",
+      "id": "976b1bf7-459f-4802-a1ef-3bab17c4907e"
     }
   ],
   "children-measurement-map": [
